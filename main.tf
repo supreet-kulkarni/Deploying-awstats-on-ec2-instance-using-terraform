@@ -155,7 +155,7 @@ resource "aws_instance" "web_server" {
                      /usr/bin/perl /usr/lib/cgi-bin/awstat/awstats.pl -config=linux -update
                 EOF
   tags = {
-    Name = "webserver"
+    Name = "awstats-Server"
   }
 }
 
