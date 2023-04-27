@@ -134,7 +134,7 @@ resource "aws_instance" "web_server" {
                      #!/bin/bash
                      sudo su 
                      apt update
-                     apt install apache2 –y
+                     apt install apache2 -y
                      git clone https://github.com/eldy/AWStats.git
                      tar cvzf AWStats-7.9.tar.gz AWStats
                      tar xvzf  AWStats-7.9.tar.gz
