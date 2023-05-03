@@ -8,12 +8,7 @@ pipeline {
     agent any
 
     stages {
-        stage('ChackOut') {
-            steps {
-                  checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/supreet-kulkarni/Deploying-awstats-on-ec2-instance-using-terraform.git']])
-            }
-                
-            }
+
         stage('terraform init') {
             steps {
                 sh('terraform init')
