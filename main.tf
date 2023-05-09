@@ -129,7 +129,7 @@ resource "aws_instance" "web_server" {
   instance_type = "t2.micro"
   subnet_id = "${aws_subnet.dev-public-1.id}"
   security_groups = [aws_security_group.allow_web.id]
-  key_name = "webkey-1"
+  key_name = "JenkinsKey"
   user_data = <<-EOF
                      #!/bin/bash
                      sudo su 
